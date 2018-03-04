@@ -25,3 +25,6 @@
 </p>
 
 <small>reference: <a href="https://stackoverflow.com/questions/34810526/how-to-update-node-with-nvm">https://stackoverflow.com/questions/34810526/how-to-update-node-with-nvm</a></small>
+
+<h4>delete nodejs on mac mannually</h4>
+<small>reference: <a href="http://stackabuse.com/how-to-uninstall-node-js-from-mac-osx/">http://stackabuse.com/how-to-uninstall-node-js-from-mac-osx</a>/</small>
