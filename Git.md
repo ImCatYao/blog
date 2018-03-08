@@ -19,3 +19,28 @@
   <li><small><a href="https://coderwall.com/p/k2fisg/git-clone-a-repository-and-checkout-a--tag">Git clone a repository and checkout a specified tag</a></small></li>
   <li><small><a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">https://git-scm.com/book/en/v2/Git-Basics-Tagging</a></small></li>
 </ol>
+<br>
+<h3>How to add alias commands in git?
+</h3>
+<ol>
+  <li>
+    Edit <i>~/.gitconfig</i> 
+    <pre>
+[alias]
+  gst = 'git stataus'
+  gcm = 'git commit --m
+  gca = 'git commit --ammed
+    </pre>
+  </li>
+  <li>
+    or use git config alias command:
+    <pre>
+$ git config --global alias.gst  'git status'
+    </pre>
+  </li>
+</ol>
+<p><small>reference: <a href="https://stackoverflow.com/questions/2553786/how-do-i-alias-commands-in-git">https://stackoverflow.com/questions/2553786/how-do-i-alias-commands-in-git</a></small></p>
+
+
+
+
