@@ -40,7 +40,10 @@ $ git config --global alias.gst  'git status'
   </li>
 </ol>
 <p><small>reference: <a href="https://stackoverflow.com/questions/2553786/how-do-i-alias-commands-in-git">https://stackoverflow.com/questions/2553786/how-do-i-alias-commands-in-git</a></small></p>
-
+<h3>checkout file from cache area</h3>
+<pre>
+  git checkout --cache filename
+</pre>
 
 
 
