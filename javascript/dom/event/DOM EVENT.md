@@ -11,13 +11,13 @@ the event is dispatched to the target node.
 #### phase 3: bubbling stage
 the event is dispatched to the target's ancestors from the direct parent of the target node to the root of the tree.
 
-<img src="https://www.w3.org/TR/2006/WD-DOM-Level-3-Events-20060413/images/eventflow.png" alt=""> 
+<img src="https://www.w3.org/TR/2006/WD-DOM-Level-3-Events-20060413/images/eventflow.png" alt="">
+
 #### Event listeners
 Event listeners can be registered on all nodes in the tree for a specfic type of event or event category, phase, and group.
 
 
-
-#### add a event listener and remove a event listeners  to a dom element for specified event type
+#### add an event listener and remove an event listener  to a dom element for specified event type
 ```javascript
 var oDiv = document.getElementById('demo')
 var hanlder = function (e) {
@@ -152,7 +152,7 @@ elem.dispatchEvent(event);
 ```
 This part code is also the philosophy of <i>Vue.js</i> event bus.
 
-references:
+#### references:
 - <a href="https://www.w3.org/TR/2006/WD-DOM-Level-3-Events-20060413/events.html">W3c  event standard</a>
 - <a href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/Events/Creating_and_triggering_events">MDN create custom event</a>
 
