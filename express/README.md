@@ -8,6 +8,7 @@ express.js is a nodejs based web framework, it's esay to use and learn. The offi
 ## Basic usage
 express.js has a starter gennerate, which can help u build a basic application easily. More infomation can be found here. https://expressjs.com/en/starter/generator.html. <br>
 
+### step 1:
 Generally, a basic server applicaiton built with express is like following:
 
 ```javascript
@@ -28,6 +29,52 @@ app.get('/', function(req, res){
 // start the server
 var server = app.listen(3000, function() {
   console.log('Listening on port %d', server.address().port);
+})
+```
+
+### Step 2: 
+Add route function to server. 
+```javascript
+const express = require('express')
+const app = express()
+
+const indexRouter = require('./router/index')
+const usersRouter = require('./router/users')
+
+
+app.use('/', indexRouter)
+app.use('/users', usersRouter)
+
+app.all('/', (req, res, next) => {
+  res.json("welcome to my site!")
+})
+
+var server = app.listen(4400, function() {
+  console.log('Listening on port %d', server.address().port);
+})
+```
+<br>
+
+Sample code for path '/users'
+```javascript
+const express = require('express')
+const router = express.Router()
+
+module.exports = router
+
+router.get('/', (req, res, next) => {
+  res.json({
+    path: req.path,
+    method: req.method
+  })
+})
+
+router.get('/:id', (req, res, next) => {
+   res.json({
+    path: req.path,
+    method: req.method,
+    param: req.params['id']
+  })
 })
 ```
 
