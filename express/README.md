@@ -77,4 +77,10 @@ router.get('/:id', (req, res, next) => {
   })
 })
 ```
+You might be wondering how express handle routing, setting and caching for app? Here we dive into the source code of express.js. <br><br>
 
+## source code reading
+
+#### Basically reading.
+The code structure for express module
+![alt text](./express.png)
